@@ -1,0 +1,49 @@
+"3.8.1 (created: 2013/11/21 23:49:14)
+
+source! "C:\\Users\\Wenxuan\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
+
+" Set map leader
+let mapleader = ","
+
+" 屏幕卷动映射 
+" j -> 2j 的映射需要用noremap
+" map 会循环映射，noremap不会
+noremap j 2j
+noremap k 2k
+map J <C-d>
+map K <C-u>
+
+" 快速切换最近两个标签
+map <A-q> <C-6>
+
+" 依次向前/向后切换标签
+map <A-h> gT
+map <A-l> gt
+
+" 将当前标签向前/向后移动一位
+map <A--> :tabmove -1<CR>
+map <A-=> :tabmove +1<CR>
+
+" 用gi快速进入Insert模式时转入TEXTAREA模式
+noremap gi gi<C-t>
+
+" 快速调用有道搜索('d' means 'dictionary')
+map <leader>d :tabnew yd<SPACE>
+map <leader>D :open yd<SPACE>
+
+" 快速调用谷歌搜索
+map <leader>g :tabnew gg<SPACE>
+map <leader>G :open gg<SPACE>
+
+" 快速调用百度搜索
+map <leader>b :tabnew bd<SPACE>
+map <leader>B :open bd<SPACE>
+
+" 快速调用淘宝搜索
+map <leader>t :tabnew tb<SPACE>
+map <leader>T :open tb<SPACE>
+
+" 切换主题
+colorscheme wfxr2
