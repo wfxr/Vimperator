@@ -46,4 +46,4 @@ map <leader>t :tabnew tb<SPACE>
 map <leader>T :open tb<SPACE>
 
 " ÇÐ»»Ö÷Ìâ
-colorscheme wfxr2
+colorscheme wfxr2_noh
