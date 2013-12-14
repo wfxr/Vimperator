@@ -8,15 +8,15 @@ source! "C:\\Users\\Wenxuan\\_vimperatorrc.local"
 let mapleader = ","
 
 " 屏幕卷动映射 
-" j -> 2j 的映射需要用noremap
+" j -> nj 的映射需要用noremap
 " map 会循环映射，noremap不会
-noremap j 2j
-noremap k 2k
+noremap j 3j
+noremap k 3k
 map J <C-d>
 map K <C-u>
 
-" 快速切换最近两个标签
-map <A-q> <C-6>
+" 退出浏览器（不保存）
+map Q ZQ
 
 " 依次向前/向后切换标签
 map <A-h> gT
